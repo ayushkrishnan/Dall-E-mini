@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+:root {
+  font-family: Poppins, Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+html {
+  /* height: 100%; */
+}
+body {
+  margin: 0;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  place-items: center;
+  background: #fa709a;
+  height: 100%;
+  min-height: 100vh;
+  background: -webkit-linear-gradient(to left, #fa709a, #fee140);
+  background: linear-gradient(to left, #fa709a, #fee140);
+  overflow-x: hidden;
+}
+footer {
+  display: block;
+}
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.5;
+  /* transform: translateY(-10vh); */
+}
+#app {
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  width: 100vw;
+  justify-content: space-evenly;
+  height: 100%;
+  gap: 5vh;
+}
+input {
+  background: transparent;
+  border: 0px solid transparent;
+  outline: none;
+  border-bottom: 1px solid black;
+  font-size: 90px;
+  overflow-y: scroll;
+  color: black;
+  /* filter: drop-shadow(5px 8px 5px rgba(0, 0, 0, 0.205)); */
+  max-width: 90vw;
+}
+input:focus {
+  outline: none;
+}
+input::placeholder {
+  color: rgb(95, 95, 95);
+  filter: blur(0.3px);
+  opacity: 0.6;
+}
+.btn {
+  font-family: Poppins, Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 1em 2em;
+  background-color: #fa709a;
+  outline: none;
+  border: none;
+}
+.btn:hover {
+  background-color: #fa709a99;
+  cursor: pointer;
+}
+.prompt-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#images {
+  outline: 3px dashed black;
+  width: 60%;
+  min-height: 50%;
+  display: grid;
+  place-items: center;
+}
+.images {
+  width: 95%;
+  height: 95%;
+  outline: 1px solid black;
+}
+
+.loaded-images {
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (max-width: 600px) {
+  .loaded-images {
+    grid-template-columns: 1fr;
+  }
+}
+.spinner {
+  margin: 5vh 0;
+}
